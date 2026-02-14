@@ -1,2 +1,5 @@
 # Firewall-Misconfigurations-Paper-Report
-Exploring Firewall Misconfigurations in the Wild
+Exploring Firewall Misconfigurations in the Wild.
+
+A firewall plays a critical role in protecting networks by acting as a barrier between the trusted and untrusted network, restricting which trusted hosts and services can be accessed from the untrusted network. However, its effectiveness heavily depends on correct configuration, such as precise rule definitions and proper rule ordering. In this report, we discuss common firewall rule misconfigurations, with a special focus on a firewall misconfiguration that exposes protected
+services to the public Internet. A simple careless exchange of the source and destination port numbers caused due to a human-error, allows an attacker to reach protected services that are meant to be unreachable from the public Internet. As a result, attackers can discover up to 12.60% more services, just by scanning from two popular source ports, namely ports 80 and 53. We end this report by discussing possible countermeasures and giving an overview of possible future directions.
